@@ -1,8 +1,8 @@
-/* A Bison parser, made by GNU Bison 2.7.  */
+/* A Bison parser, made by GNU Bison 2.7.1.  */
 
 /* Bison implementation for Yacc-like parsers in C
    
-      Copyright (C) 1984, 1989-1990, 2000-2012 Free Software Foundation, Inc.
+      Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
 #define YYBISON 1
 
 /* Bison version.  */
-#define YYBISON_VERSION "2.7"
+#define YYBISON_VERSION "2.7.1"
 
 /* Skeleton name.  */
 #define YYSKELETON_NAME "yacc.c"
@@ -368,12 +368,21 @@ typedef short int yytype_int16;
 # endif
 #endif
 
+#ifndef __attribute__
+/* This feature is available in gcc versions 2.5 and later.  */
+# if (! defined __GNUC__ || __GNUC__ < 2 \
+      || (__GNUC__ == 2 && __GNUC_MINOR__ < 5))
+#  define __attribute__(Spec) /* empty */
+# endif
+#endif
+
 /* Suppress unused-variable warnings by "using" E.  */
 #if ! defined lint || defined __GNUC__
 # define YYUSE(E) ((void) (E))
 #else
 # define YYUSE(E) /* empty */
 #endif
+
 
 /* Identity function, used to suppress warnings about constant conditions.  */
 #ifndef lint
@@ -962,11 +971,7 @@ yy_symbol_value_print (yyoutput, yytype, yyvaluep)
 # else
   YYUSE (yyoutput);
 # endif
-  switch (yytype)
-    {
-      default:
-        break;
-    }
+  YYUSE (yytype);
 }
 
 
@@ -1356,12 +1361,7 @@ yydestruct (yymsg, yytype, yyvaluep)
     yymsg = "Deleting";
   YY_SYMBOL_PRINT (yymsg, yytype, yyvaluep, yylocationp);
 
-  switch (yytype)
-    {
-
-      default:
-        break;
-    }
+  YYUSE (yytype);
 }
 
 
@@ -1645,7 +1645,7 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 119 "parse.y"
     { /* add default rule */
 			int def_rule;
@@ -1676,7 +1676,7 @@ yyreduce:
     break;
 
   case 3:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 148 "parse.y"
     { /* initialize for processing rules */
 
@@ -1686,13 +1686,13 @@ yyreduce:
     break;
 
   case 7:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 159 "parse.y"
     { synerr( _("unknown error processing section 1") ); }
     break;
 
   case 8:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 163 "parse.y"
     {
 			check_options();
@@ -1702,37 +1702,37 @@ yyreduce:
     break;
 
   case 9:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 171 "parse.y"
     { xcluflg = false; }
     break;
 
   case 10:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 174 "parse.y"
     { xcluflg = true; }
     break;
 
   case 11:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 178 "parse.y"
     { scinstal( nmstr, xcluflg ); }
     break;
 
   case 12:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 181 "parse.y"
     { scinstal( nmstr, xcluflg ); }
     break;
 
   case 13:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 184 "parse.y"
     { synerr( _("bad start condition list") ); }
     break;
 
   case 17:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 195 "parse.y"
     {
 			outfilename = copy_string( nmstr );
@@ -1741,49 +1741,49 @@ yyreduce:
     break;
 
   case 18:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 200 "parse.y"
     { extra_type = copy_string( nmstr ); }
     break;
 
   case 19:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 202 "parse.y"
     { prefix = copy_string( nmstr ); }
     break;
 
   case 20:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 204 "parse.y"
     { yyclass = copy_string( nmstr ); }
     break;
 
   case 21:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 206 "parse.y"
     { headerfilename = copy_string( nmstr ); }
     break;
 
   case 22:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 208 "parse.y"
     { tablesext = true; tablesfilename = copy_string( nmstr ); }
     break;
 
   case 23:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 212 "parse.y"
     { scon_stk_ptr = (yyvsp[(2) - (5)]); }
     break;
 
   case 24:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 214 "parse.y"
     { scon_stk_ptr = (yyvsp[(2) - (5)]); }
     break;
 
   case 26:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 219 "parse.y"
     {
 			/* Initialize for a parse of one rule. */
@@ -1798,7 +1798,7 @@ yyreduce:
     break;
 
   case 27:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 232 "parse.y"
     {
 			pat = (yyvsp[(2) - (2)]);
@@ -1837,7 +1837,7 @@ yyreduce:
     break;
 
   case 28:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 268 "parse.y"
     {
 			pat = (yyvsp[(1) - (1)]);
@@ -1864,7 +1864,7 @@ yyreduce:
     break;
 
   case 29:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 292 "parse.y"
     {
 			if ( scon_stk_ptr > 0 )
@@ -1890,25 +1890,25 @@ yyreduce:
     break;
 
   case 30:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 315 "parse.y"
     { synerr( _("unrecognized rule") ); }
     break;
 
   case 31:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 319 "parse.y"
     { (yyval) = scon_stk_ptr; }
     break;
 
   case 32:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 323 "parse.y"
     { (yyval) = (yyvsp[(2) - (4)]); }
     break;
 
   case 33:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 326 "parse.y"
     {
 			(yyval) = scon_stk_ptr;
@@ -1928,19 +1928,19 @@ yyreduce:
     break;
 
   case 34:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 343 "parse.y"
     { (yyval) = scon_stk_ptr; }
     break;
 
   case 37:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 351 "parse.y"
     { synerr( _("bad start condition list") ); }
     break;
 
   case 38:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 355 "parse.y"
     {
 			if ( (scnum = sclookup( nmstr )) == 0 )
@@ -1965,7 +1965,7 @@ yyreduce:
     break;
 
   case 39:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 378 "parse.y"
     {
 			if ( transchar[lastst[(yyvsp[(2) - (2)])]] != SYM_EPSILON )
@@ -2024,13 +2024,13 @@ yyreduce:
     break;
 
   case 40:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 434 "parse.y"
     { synerr( _("trailing context used twice") ); }
     break;
 
   case 41:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 437 "parse.y"
     {
 			headcnt = 0;
@@ -2076,7 +2076,7 @@ yyreduce:
     break;
 
   case 42:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 480 "parse.y"
     {
 			(yyval) = (yyvsp[(1) - (1)]);
@@ -2095,7 +2095,7 @@ yyreduce:
     break;
 
   case 43:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 498 "parse.y"
     {
 			varlength = true;
@@ -2104,13 +2104,13 @@ yyreduce:
     break;
 
   case 44:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 504 "parse.y"
     { (yyval) = (yyvsp[(1) - (1)]); }
     break;
 
   case 45:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 509 "parse.y"
     {
 			/* This rule is written separately so the
@@ -2139,7 +2139,7 @@ yyreduce:
     break;
 
   case 46:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 536 "parse.y"
     {
 			/* This is where concatenation of adjacent patterns
@@ -2150,13 +2150,13 @@ yyreduce:
     break;
 
   case 47:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 544 "parse.y"
     { (yyval) = (yyvsp[(1) - (1)]); }
     break;
 
   case 48:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 547 "parse.y"
     {
 			varlength = true;
@@ -2187,7 +2187,7 @@ yyreduce:
     break;
 
   case 49:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 575 "parse.y"
     {
 			varlength = true;
@@ -2204,7 +2204,7 @@ yyreduce:
     break;
 
   case 50:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 589 "parse.y"
     {
 			/* The series could be something like "(foo)",
@@ -2227,7 +2227,7 @@ yyreduce:
     break;
 
   case 51:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 611 "parse.y"
     {
 			varlength = true;
@@ -2237,7 +2237,7 @@ yyreduce:
     break;
 
   case 52:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 618 "parse.y"
     {
 			varlength = true;
@@ -2246,7 +2246,7 @@ yyreduce:
     break;
 
   case 53:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 624 "parse.y"
     {
 			varlength = true;
@@ -2255,7 +2255,7 @@ yyreduce:
     break;
 
   case 54:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 630 "parse.y"
     {
 			varlength = true;
@@ -2286,7 +2286,7 @@ yyreduce:
     break;
 
   case 55:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 658 "parse.y"
     {
 			varlength = true;
@@ -2303,7 +2303,7 @@ yyreduce:
     break;
 
   case 56:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 672 "parse.y"
     {
 			/* The singleton could be something like "(foo)",
@@ -2325,7 +2325,7 @@ yyreduce:
     break;
 
   case 57:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 691 "parse.y"
     {
 			if ( ! madeany )
@@ -2362,7 +2362,7 @@ yyreduce:
     break;
 
   case 58:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 725 "parse.y"
     {
 				/* Sort characters for fast searching.
@@ -2383,7 +2383,7 @@ yyreduce:
     break;
 
   case 59:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 743 "parse.y"
     {
 			++rulelen;
@@ -2396,19 +2396,19 @@ yyreduce:
     break;
 
   case 60:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 753 "parse.y"
     { (yyval) = (yyvsp[(2) - (3)]); }
     break;
 
   case 61:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 756 "parse.y"
     { (yyval) = (yyvsp[(2) - (3)]); }
     break;
 
   case 62:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 759 "parse.y"
     {
 			++rulelen;
@@ -2425,25 +2425,25 @@ yyreduce:
     break;
 
   case 63:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 773 "parse.y"
     { (yyval) = ccl_set_diff  ((yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 64:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 774 "parse.y"
     { (yyval) = ccl_set_union ((yyvsp[(1) - (3)]), (yyvsp[(3) - (3)])); }
     break;
 
   case 66:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 780 "parse.y"
     { (yyval) = (yyvsp[(2) - (3)]); }
     break;
 
   case 67:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 783 "parse.y"
     {
 			cclnegate( (yyvsp[(3) - (4)]) );
@@ -2452,7 +2452,7 @@ yyreduce:
     break;
 
   case 68:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 790 "parse.y"
     {
 
@@ -2515,7 +2515,7 @@ yyreduce:
     break;
 
   case 69:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 850 "parse.y"
     {
 			ccladd( (yyvsp[(1) - (2)]), (yyvsp[(2) - (2)]) );
@@ -2536,7 +2536,7 @@ yyreduce:
     break;
 
   case 70:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 868 "parse.y"
     {
 			/* Too hard to properly maintain cclsorted. */
@@ -2546,7 +2546,7 @@ yyreduce:
     break;
 
   case 71:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 875 "parse.y"
     {
 			cclsorted = true;
@@ -2556,43 +2556,43 @@ yyreduce:
     break;
 
   case 72:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 883 "parse.y"
     { CCL_EXPR(isalnum); }
     break;
 
   case 73:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 884 "parse.y"
     { CCL_EXPR(isalpha); }
     break;
 
   case 74:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 885 "parse.y"
     { CCL_EXPR(IS_BLANK); }
     break;
 
   case 75:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 886 "parse.y"
     { CCL_EXPR(iscntrl); }
     break;
 
   case 76:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 887 "parse.y"
     { CCL_EXPR(isdigit); }
     break;
 
   case 77:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 888 "parse.y"
     { CCL_EXPR(isgraph); }
     break;
 
   case 78:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 889 "parse.y"
     { 
                           CCL_EXPR(islower);
@@ -2602,31 +2602,31 @@ yyreduce:
     break;
 
   case 79:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 894 "parse.y"
     { CCL_EXPR(isprint); }
     break;
 
   case 80:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 895 "parse.y"
     { CCL_EXPR(ispunct); }
     break;
 
   case 81:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 896 "parse.y"
     { CCL_EXPR(isspace); }
     break;
 
   case 82:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 897 "parse.y"
     { CCL_EXPR(isxdigit); }
     break;
 
   case 83:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 898 "parse.y"
     {
                     CCL_EXPR(isupper);
@@ -2636,67 +2636,67 @@ yyreduce:
     break;
 
   case 84:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 904 "parse.y"
     { CCL_NEG_EXPR(isalnum); }
     break;
 
   case 85:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 905 "parse.y"
     { CCL_NEG_EXPR(isalpha); }
     break;
 
   case 86:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 906 "parse.y"
     { CCL_NEG_EXPR(IS_BLANK); }
     break;
 
   case 87:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 907 "parse.y"
     { CCL_NEG_EXPR(iscntrl); }
     break;
 
   case 88:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 908 "parse.y"
     { CCL_NEG_EXPR(isdigit); }
     break;
 
   case 89:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 909 "parse.y"
     { CCL_NEG_EXPR(isgraph); }
     break;
 
   case 90:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 910 "parse.y"
     { CCL_NEG_EXPR(isprint); }
     break;
 
   case 91:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 911 "parse.y"
     { CCL_NEG_EXPR(ispunct); }
     break;
 
   case 92:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 912 "parse.y"
     { CCL_NEG_EXPR(isspace); }
     break;
 
   case 93:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 913 "parse.y"
     { CCL_NEG_EXPR(isxdigit); }
     break;
 
   case 94:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 914 "parse.y"
     { 
 				if ( sf_case_ins() )
@@ -2707,7 +2707,7 @@ yyreduce:
     break;
 
   case 95:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 920 "parse.y"
     {
 				if ( sf_case_ins() )
@@ -2718,7 +2718,7 @@ yyreduce:
     break;
 
   case 96:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 929 "parse.y"
     {
 			if ( (yyvsp[(2) - (2)]) == nlch )
@@ -2736,13 +2736,13 @@ yyreduce:
     break;
 
   case 97:
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 944 "parse.y"
     { (yyval) = mkstate( SYM_EPSILON ); }
     break;
 
 
-/* Line 1792 of yacc.c  */
+/* Line 1787 of yacc.c  */
 #line 2747 "parse.c"
       default: break;
     }
@@ -2974,7 +2974,7 @@ yyreturn:
 }
 
 
-/* Line 2055 of yacc.c  */
+/* Line 2050 of yacc.c  */
 #line 947 "parse.y"
 
 
