@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: flex-2.5.37\n"
 "Report-Msgid-Bugs-To: flex-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2012-07-22 20:48-0400\n"
+"POT-Creation-Date: 2013-11-07 20:51+0200\n"
 "PO-Revision-Date: 2013-10-30 18:20+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -14,7 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: buf.c:78
 msgid "Allocation of buffer to print string failed"
@@ -173,355 +174,362 @@ msgstr "Не могу да запишем „eoltbl“"
 msgid "Could not write yynultrans_tbl"
 msgstr "Не могу да запишем „yynultrans_tbl“"
 
-#: main.c:189
+#: main.c:191
 msgid "rule cannot be matched"
 msgstr "правило не може бити поклопљено"
 
-#: main.c:194
+#: main.c:196
 msgid "-s option given but default rule can be matched"
 msgstr "дата је опција „-s“ али основно правило може бити поклопљено"
 
-#: main.c:234
+#: main.c:236
 msgid "Can't use -+ with -l option"
 msgstr "Не могу да користим -+ са опцијом „-l“"
 
-#: main.c:237
+#: main.c:239
 msgid "Can't use -f or -F with -l option"
 msgstr "Не могу да користим „-f“ или „-F“ са опцијом „-l“"
 
-#: main.c:241
+#: main.c:243
 msgid "Can't use --reentrant or --bison-bridge with -l option"
 msgstr "Не могу да користим „--reentrant“ или „--bison-bridge“ са опцијом „-l“"
 
-#: main.c:278
+#: main.c:275
 msgid "-Cf/-CF and -Cm don't make sense together"
 msgstr "„-Cf/-CF“ и „-Cm“ немају смисла заједно"
 
-#: main.c:281
+#: main.c:278
 msgid "-Cf/-CF and -I are incompatible"
 msgstr "„-Cf/-CF“ и „-I“ су несагласне"
 
-#: main.c:285
+#: main.c:282
 msgid "-Cf/-CF are incompatible with lex-compatibility mode"
 msgstr "„-Cf/-CF“ су несагласни са режимом лекс-сагласности"
 
-#: main.c:290
+#: main.c:287
 msgid "-Cf and -CF are mutually exclusive"
 msgstr "„-Cf“ и „-CF“ се међусобно искључују"
 
-#: main.c:294
+#: main.c:291
 msgid "Can't use -+ with -CF option"
 msgstr "Не могу да користим -+ са опцијом „-CF“"
 
-#: main.c:297
+#: main.c:294
 #, c-format
 msgid "%array incompatible with -+ option"
 msgstr "%aниз није сагласан са опцијом -+"
 
-#: main.c:302
+#: main.c:299
 msgid "Options -+ and --reentrant are mutually exclusive."
 msgstr "Опције -+ и „--reentrant“ се међусобно искључују."
 
-#: main.c:305
+#: main.c:302
 msgid "bison bridge not supported for the C++ scanner."
 msgstr "бизонов мост није подржан за Ц++ скенер."
 
-#: main.c:360 main.c:406
+#: main.c:357 main.c:403
 #, c-format
 msgid "could not create %s"
 msgstr "не могу да направим %s"
 
-#: main.c:419
+#: main.c:416
 msgid "could not write tables header"
 msgstr "не могу да запшем бестаблично заглавље"
 
-#: main.c:423
+#: main.c:420
 #, c-format
 msgid "can't open skeleton file %s"
 msgstr "Не могу да отворим датотеку окоснице „%s“"
 
-#: main.c:459
+#: main.c:456
 msgid "allocation of macro definition failed"
 msgstr "није успело додељивање одреднице макроа"
 
-#: main.c:507
+#: main.c:504
 #, c-format
 msgid "input error reading skeleton file %s"
 msgstr "грешка улаза читања датотеке окоснице „%s“"
 
-#: main.c:511
+#: main.c:508
 #, c-format
 msgid "error closing skeleton file %s"
 msgstr "грешка затварања датотеке окоснице „%s“"
 
-#: main.c:696
+#: main.c:693
 #, c-format
 msgid "error creating header file %s"
 msgstr "грешка стварања датотеке заглавља „%s“"
 
-#: main.c:704
+#: main.c:701
 #, c-format
 msgid "error writing output file %s"
 msgstr "грешка записивања излазне датотеке „%s“"
 
-#: main.c:708
+#: main.c:705
 #, c-format
 msgid "error closing output file %s"
 msgstr "грешка затварања излазне датотеке „%s“"
 
-#: main.c:712
+#: main.c:709
 #, c-format
 msgid "error deleting output file %s"
 msgstr "грешка брисања излазне датотеке „%s“"
 
-#: main.c:719
+#: main.c:716
 #, c-format
 msgid "No backing up.\n"
 msgstr "Не правим резерву.\n"
 
-#: main.c:723
+#: main.c:720
 #, c-format
 msgid "%d backing up (non-accepting) states.\n"
 msgstr "%d стварам резерве (не-прихватам) стања.\n"
 
-#: main.c:727
+#: main.c:724
 #, c-format
 msgid "Compressed tables always back up.\n"
 msgstr "Сжете табеле увек стварају резерву.\n"
 
-#: main.c:730
+#: main.c:727
 #, c-format
 msgid "error writing backup file %s"
 msgstr "грешка записивања датотеке резерве „%s“"
 
-#: main.c:734
+#: main.c:731
 #, c-format
 msgid "error closing backup file %s"
 msgstr "грешка затварања датотеке резерве „%s“"
 
-#: main.c:739
+#: main.c:736
 #, c-format
 msgid "%s version %s usage statistics:\n"
 msgstr "Статистика коришћења %s издања%s:\n"
 
-#: main.c:742
+#: main.c:739
 #, c-format
 msgid "  scanner options: -"
 msgstr "  опције прегледача: -"
 
-#: main.c:821
+#: main.c:818
 #, c-format
 msgid "  %d/%d NFA states\n"
 msgstr "  %d/%d НФА стања\n"
 
-#: main.c:823
+#: main.c:820
 #, c-format
 msgid "  %d/%d DFA states (%d words)\n"
 msgstr "  %d/%d ДФА стања (%d речи)\n"
 
-#: main.c:825
+#: main.c:822
 #, c-format
 msgid "  %d rules\n"
 msgstr "  %d правила\n"
 
-#: main.c:830
+#: main.c:827
 #, c-format
 msgid "  No backing up\n"
 msgstr "  Не правим резерву\n"
 
-#: main.c:834
+#: main.c:831
 #, c-format
 msgid "  %d backing-up (non-accepting) states\n"
 msgstr "  %d стварам резерве (не-прихватам) стања\n"
 
-#: main.c:839
+#: main.c:836
 #, c-format
 msgid "  Compressed tables always back-up\n"
 msgstr "  Сжете табеле увек стварају резерву\n"
 
-#: main.c:843
+#: main.c:840
 #, c-format
 msgid "  Beginning-of-line patterns used\n"
 msgstr "  Коришћени су шаблони почетка-реда\n"
 
-#: main.c:845
+#: main.c:842
 #, c-format
 msgid "  %d/%d start conditions\n"
 msgstr "  %d/%d услови покретања\n"
 
-#: main.c:849
+#: main.c:846
 #, c-format
 msgid "  %d epsilon states, %d double epsilon states\n"
 msgstr "  %d стања ипсилона, %d стања двоструког ипсилона\n"
 
-#: main.c:853
+#: main.c:850
 #, c-format
 msgid "  no character classes\n"
 msgstr "  нема разреда знака\n"
 
-#: main.c:857
+#: main.c:854
 #, c-format
 msgid "  %d/%d character classes needed %d/%d words of storage, %d reused\n"
-msgstr "  %d/%d разредима знака беху потребне %d/%d речи складишта, %d поново коришћених\n"
+msgstr ""
+"  %d/%d разредима знака беху потребне %d/%d речи складишта, %d поново "
+"коришћених\n"
 
-#: main.c:862
+#: main.c:859
 #, c-format
 msgid "  %d state/nextstate pairs created\n"
 msgstr "  %d пара стања/следећег_стања је направљено\n"
 
-#: main.c:865
+#: main.c:862
 #, c-format
 msgid "  %d/%d unique/duplicate transitions\n"
 msgstr "  %d/%d јединствена/удвостручена прелаза\n"
 
-#: main.c:870
+#: main.c:867
 #, c-format
 msgid "  %d table entries\n"
 msgstr "  %d уноса табеле\n"
 
-#: main.c:878
+#: main.c:875
 #, c-format
 msgid "  %d/%d base-def entries created\n"
 msgstr "  направљено је %d/%d уноса основне одреднице\n"
 
-#: main.c:882
+#: main.c:879
 #, c-format
 msgid "  %d/%d (peak %d) nxt-chk entries created\n"
 msgstr "  направљено је %d/%d (врх %d) „nxt-chk“ уноса\n"
 
-#: main.c:886
+#: main.c:883
 #, c-format
 msgid "  %d/%d (peak %d) template nxt-chk entries created\n"
 msgstr "  направљено је %d/%d (врх %d)шаблона „nxt-chk“ уноса\n"
 
-#: main.c:890
+#: main.c:887
 #, c-format
 msgid "  %d empty table entries\n"
 msgstr "  %d празна уноса табеле\n"
 
-#: main.c:892
+#: main.c:889
 #, c-format
 msgid "  %d protos created\n"
 msgstr "  направљених узорака — %d\n"
 
-#: main.c:895
+#: main.c:892
 #, c-format
 msgid "  %d templates created, %d uses\n"
 msgstr "  направљених шаблона - %d, користим %d\n"
 
-#: main.c:903
+#: main.c:900
 #, c-format
 msgid "  %d/%d equivalence classes created\n"
 msgstr "  направљено је %d/%d разреда једнакости\n"
 
-#: main.c:911
+#: main.c:908
 #, c-format
 msgid "  %d/%d meta-equivalence classes created\n"
 msgstr "  направљено је %d/%d разреда мета-једнакости\n"
 
-#: main.c:917
+#: main.c:914
 #, c-format
 msgid "  %d (%d saved) hash collisions, %d DFAs equal\n"
 msgstr "  %d (сачуваних %d) сукоба хеша, %d једнак ДФА-су\n"
 
-#: main.c:919
+#: main.c:916
 #, c-format
 msgid "  %d sets of reallocations needed\n"
 msgstr "  потребна су %d скупа поновног додељивања\n"
 
-#: main.c:921
+#: main.c:918
 #, c-format
 msgid "  %d total table entries needed\n"
 msgstr "  потребна су укупно %d уноса табеле\n"
 
-#: main.c:998
+#: main.c:995
 #, c-format
 msgid "Internal error. flexopts are malformed.\n"
 msgstr "Унутрашња грешка. „flexopts“ је лоше обликован.\n"
 
-#: main.c:1008
+#: main.c:1005
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Пробајте „%s --help“ за више података.\n"
 
-#: main.c:1065
+#: main.c:1062
 #, c-format
 msgid "unknown -C option '%c'"
 msgstr "непозната опција -C „%c“"
 
-#: main.c:1194
+#: main.c:1191
 #, c-format
 msgid "%s %s\n"
 msgstr "%s %s\n"
 
-#: main.c:1469
+#: main.c:1466
 msgid "fatal parse error"
 msgstr "кобна грешка обраде"
 
-#: main.c:1501
+#: main.c:1498
 #, c-format
 msgid "could not create backing-up info file %s"
 msgstr "не могу да направим резерву датотеке података „%s“"
 
-#: main.c:1522
+#: main.c:1519
 #, c-format
 msgid "-l AT&T lex compatibility option entails a large performance penalty\n"
 msgstr "-l опција сагласности АТ&Т лекса изазива велико смањење учинка\n"
 
-#: main.c:1525
+#: main.c:1522
 #, c-format
 msgid " and may be the actual source of other reported performance penalties\n"
 msgstr " и може бити стваран извор других извешених ограничења учинка\n"
 
-#: main.c:1531
+#: main.c:1528
 #, c-format
-msgid "%%option yylineno entails a performance penalty ONLY on rules that can match newline characters\n"
-msgstr "%%опција „yylineno“ изазива смањење учинка САМО на правилима која могу да поклопе знакове новог реда\n"
+msgid ""
+"%%option yylineno entails a performance penalty ONLY on rules that can match "
+"newline characters\n"
+msgstr ""
+"%%опција „yylineno“ изазива смањење учинка САМО на правилима која могу да "
+"поклопе знакове новог реда\n"
 
-#: main.c:1538
+#: main.c:1535
 #, c-format
 msgid "-I (interactive) entails a minor performance penalty\n"
 msgstr "-I (међудејствено) изазива мање смањење учинка\n"
 
-#: main.c:1543
+#: main.c:1540
 #, c-format
 msgid "yymore() entails a minor performance penalty\n"
 msgstr "„yymore()“ изазива мање смањење учинка\n"
 
-#: main.c:1549
+#: main.c:1546
 #, c-format
 msgid "REJECT entails a large performance penalty\n"
 msgstr "„REJECT“ изазива веће смањење учинка\n"
 
-#: main.c:1554
+#: main.c:1551
 #, c-format
 msgid "Variable trailing context rules entail a large performance penalty\n"
 msgstr "Променљива правила пратећег контекса изазивају веће смањење учинка\n"
 
-#: main.c:1566
+#: main.c:1563
 msgid "REJECT cannot be used with -f or -F"
 msgstr "„REJECT“ не може да се користи са „-f“ или „-F“"
 
-#: main.c:1569
+#: main.c:1566
 #, c-format
 msgid "%option yylineno cannot be used with REJECT"
 msgstr "%oпција „yylineno“ не може да се користи са „REJECT“"
 
-#: main.c:1572
+#: main.c:1569
 msgid "variable trailing context rules cannot be used with -f or -F"
-msgstr "променљива правила пратећег контекста не могу бити коришћена са „-f“ или „-F“"
+msgstr ""
+"променљива правила пратећег контекста не могу бити коришћена са „-f“ или „-F“"
 
-#: main.c:1695
+#: main.c:1692
 #, c-format
 msgid "%option yyclass only meaningful for C++ scanners"
 msgstr "%oпција „yyclass“ има смисла само за Ц++ скенере"
 
-#: main.c:1802
+#: main.c:1799
 #, c-format
 msgid "Usage: %s [OPTIONS] [FILE]...\n"
 msgstr "Употреба: %s [ОПЦИЈЕ] [ДАТОТЕКА]...\n"
 
-#: main.c:1805
+#: main.c:1802
 #, c-format
 msgid ""
 "Generates programs that perform pattern-matching on text.\n"
@@ -551,7 +559,8 @@ msgid ""
 "  -S, --skel=FILE         specify skeleton file\n"
 "  -t, --stdout            write scanner on stdout instead of %s\n"
 "      --yyclass=NAME      name of C++ class\n"
-"      --header-file=FILE   create a C header file in addition to the scanner\n"
+"      --header-file=FILE   create a C header file in addition to the "
+"scanner\n"
 "      --tables-file[=FILE] write tables to FILE\n"
 "\n"
 "Scanner behavior:\n"
@@ -588,31 +597,41 @@ msgstr ""
 "Стварајте програме који обављају поклапање према шаблону у тексту.\n"
 "\n"
 "Сабијање табеле:\n"
-"  -Ca, --align                 обрађује веће табеле зарад бољег поравнања меморије\n"
+"  -Ca, --align                 обрађује веће табеле зарад бољег поравнања "
+"меморије\n"
 "  -Ce, --ecs                   изграђује разреде једнакости\n"
-"  -Cf                          не сажима табеле; користи „-f“ representation” представљање\n"
-"  -CF                          не сажима табеле; користи „-F“ representation” представљање\n"
+"  -Cf                          не сажима табеле; користи „-f“ "
+"representation” представљање\n"
+"  -CF                          не сажима табеле; користи „-F“ "
+"representation” представљање\n"
 "  -Cm, --meta-ecs              изграђује разреде мета-једнакости\n"
-"  -Cr, --read                  користи „read()уместо стндардног уи за улаз скенера\n"
+"  -Cr, --read                  користи „read()уместо стндардног уи за улаз "
+"скенера\n"
 "  -f, --full                   ствара брзи, велики скенер. Исто као „-Cfr“\n"
-"  -F, --fast                   користи заменско представљање табеле. Исто као „-CFr“\n"
-"  -Cem                         задато сажимање (исто као „--ecs --meta-ecs“)\n"
+"  -F, --fast                   користи заменско представљање табеле. Исто "
+"као „-CFr“\n"
+"  -Cem                         задато сажимање (исто као „--ecs --meta-"
+"ecs“)\n"
 "\n"
 "Прочишћавање:\n"
 "  -d, --debug                  укључује режим прочишћавања у скенеру\n"
 "  -b, --backup                 записује податке о стварању резерве у „%s“\n"
 "  -p, --perf-report            записује извештај о учинку стандардну грешку\n"
-"  -s, --nodefault              потискује задато правило у „ECHO“ непоклопљени текст\n"
+"  -s, --nodefault              потискује задато правило у „ECHO“ "
+"непоклопљени текст\n"
 "  -T, --trace                  %s треба да ради у режиму праћења\n"
 "  -w, --nowarn                 не ствара упозорења\n"
-"  -v, --verbose                записује сажетак статистике скенера на стандардни излаз\n"
+"  -v, --verbose                записује сажетак статистике скенера на "
+"стандардни излаз\n"
 "\n"
 "Датотеке:\n"
 "  -o, --outfile=ДАТОТЕКА       наводи излазни назив датотеке\n"
 "  -S, --skel=ДАТОТЕКА          наводи датотеку окоснице\n"
-"  -t, --stdout                 записује скенер на стандардни излазуместо на „%s“\n"
+"  -t, --stdout                 записује скенер на стандардни излазуместо на "
+"„%s“\n"
 "      --yyclass=НАЗИВ          назив Ц++ разреда\n"
-"      --header-file=ДАТОТЕКА   ствара датотеку Ц заглавља као додатак скенеру\n"
+"      --header-file=ДАТОТЕКА   ствара датотеку Ц заглавља као додатак "
+"скенеру\n"
 "      --tables-file[=ДАТОТЕКА] записује табеле у ДАТОТЕКУ\n"
 "\n"
 "Понашање скенера:\n"
@@ -622,7 +641,8 @@ msgstr ""
 "  -i, --case-insensitive       занемарује величину слова у шаблонима\n"
 "  -l, --lex-compat             највећа сагласност са изворним лексом\n"
 "  -X, --posix-compat           највећа сагласност са лексом ПОСИКС-а\n"
-"  -I, --interactive            ствара међудејствени скенер (супротно од „-B“)\n"
+"  -I, --interactive            ствара међудејствени скенер (супротно од „-"
+"B“)\n"
 "      --yylineno               прати број реда у „yylineno“\n"
 "\n"
 "Створени код:\n"
@@ -720,20 +740,20 @@ msgstr "празна машина у „dupmachine()“"
 msgid "Variable trailing context rule at line %d\n"
 msgstr "Променљиво правило пратећег контекста на %d. реду\n"
 
-#: nfa.c:353
+#: nfa.c:364
 msgid "bad state type in mark_beginning_as_normal()"
 msgstr "лоша врста стања у „mark_beginning_as_normal()“"
 
-#: nfa.c:598
+#: nfa.c:609
 #, c-format
 msgid "input rules are too complicated (>= %d NFA states)"
 msgstr "улазна правила су превише сложена (>= %d НФА стања)"
 
-#: nfa.c:677
+#: nfa.c:688
 msgid "found too many transitions in mkxtion()"
 msgstr "пронађох превише прелаза у „mkxtion()“"
 
-#: nfa.c:703
+#: nfa.c:714
 #, c-format
 msgid "too many rules (> %d)!"
 msgstr "превише правила (> %d)!"
