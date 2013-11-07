@@ -1,0 +1,3 @@
+#!/bin/bash 
+
+ln -s flex ${3}/usr/bin/lex
