@@ -342,6 +342,7 @@ help2man = @HELP2MAN@
 info_TEXINFOS = flex.texi
 dist_man_MANS = flex.1
 dist_doc_DATA = flex.pdf
+EXTRA_DIST = $(info_TEXINFOS) $(PDFS) flex.dvi
 CLEANFILES = \
 	flex.hks \
 	flex.ops
@@ -535,10 +536,6 @@ dist-info: $(INFO_DEPS)
 
 mostlyclean-aminfo:
 	-rm -rf flex.t2d flex.t2p
-
-clean-aminfo:
-	-test -z "flex.dvi flex.pdf flex.ps flex.html" \
-	|| rm -rf flex.dvi flex.pdf flex.ps flex.html
 
 maintainer-clean-aminfo:
 	@list='$(INFO_DEPS)'; for i in $$list; do \
@@ -877,6 +874,8 @@ $(dist_man_MANS): $(top_srcdir)/main.c
 	--section=`echo $$i | sed -e 's/.*\.\([^.]*\)$$/\1/'` \
 	 ../flex$(EXEEXT) > $$i || rm -f $$i ; \
 	done
+
+clean-aminfo:
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

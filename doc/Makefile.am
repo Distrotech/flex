@@ -1,8 +1,11 @@
 help2man = @HELP2MAN@
 
+
 info_TEXINFOS =	flex.texi
 dist_man_MANS = flex.1
-dist_doc_DATA= flex.pdf
+dist_doc_DATA = flex.pdf
+
+EXTRA_DIST = $(info_TEXINFOS) $(PDFS) flex.dvi
 
 CLEANFILES = \
 	flex.hks \
@@ -14,3 +17,6 @@ $(dist_man_MANS): $(top_srcdir)/main.c
 	--section=`echo $$i | sed -e 's/.*\.\([^.]*\)$$/\1/'` \
 	 ../flex$(EXEEXT) > $$i || rm -f $$i ; \
 	done
+
+
+clean-aminfo:
